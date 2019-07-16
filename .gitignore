@@ -1,0 +1,6 @@
+.directory
+.svn
+AutomaticConversion.log
+ConverterBackup
+*.bak
+lib

@@ -1,0 +1,51 @@
+object Form1: TForm1
+  Left = 384
+  Top = 255
+  Width = 330
+  Height = 275
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Caption = 'Billard'
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'System'
+  Font.Style = []
+  Menu = MainMenu1
+  PixelsPerInch = 96
+  Position = poDefault
+  OnCreate = FormCreate
+  object Box: TPanel
+    Left = 0
+    Top = 0
+    Width = 322
+    Height = 229
+    Align = alClient
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 56
+    Top = 24
+    object MenuBall: TMenuItem
+      Caption = '&Kugel'
+      object Neu1: TMenuItem
+        Caption = '&Neu...'
+        OnClick = Neu1Click
+      end
+      object ItemDelete: TMenuItem
+        Caption = '&Löschen'
+        OnClick = ItemDeleteClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Beenden1: TMenuItem
+        Caption = '&Beenden'
+        OnClick = Beenden1Click
+      end
+    end
+    object StopItem: TMenuItem
+      Caption = '&Stop'
+      OnClick = StopItemClick
+    end
+  end
+end
